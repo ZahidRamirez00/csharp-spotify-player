@@ -8,11 +8,6 @@ namespace Spotify_Player
 {
     internal class Brano : IContenutoRiproducibile
     {
-        public override string Album()
-        {
-            throw new NotImplementedException();
-        }
-
         public override int Anno()
         {
             throw new NotImplementedException();
@@ -23,12 +18,12 @@ namespace Spotify_Player
             throw new NotImplementedException();
         }
 
-        public override string Durata()
+        public override string Descrizione()
         {
             throw new NotImplementedException();
         }
 
-        public override string Genere()
+        public override string Durata()
         {
             throw new NotImplementedException();
         }

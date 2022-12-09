@@ -8,10 +8,8 @@ namespace Spotify_Player
 {
     internal class Podcast : IContenutoRiproducibile
     {
-        public override string Album()
-        {
-            throw new NotImplementedException();
-        }
+        public Podcast(string Titolo, string Artista, ) { }
+        
 
         public override int Anno()
         {
@@ -23,12 +21,12 @@ namespace Spotify_Player
             throw new NotImplementedException();
         }
 
-        public override string Durata()
+        public override string Descrizione()
         {
             throw new NotImplementedException();
         }
 
-        public override string Genere()
+        public override string Durata()
         {
             throw new NotImplementedException();
         }

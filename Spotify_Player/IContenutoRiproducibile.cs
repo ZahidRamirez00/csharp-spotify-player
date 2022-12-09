@@ -10,8 +10,7 @@ namespace Spotify_Player
     {
         public abstract string Titolo();
         public abstract string Artista();
-        public abstract string Album();
-        public abstract string Genere();
+        public abstract string Descrizione();
         public abstract string Durata();
         public abstract int Anno();
 
