@@ -6,31 +6,79 @@ using System.Threading.Tasks;
 
 namespace Spotify_Player
 {
-    internal class Brano : IContenutoRiproducibile
+    public class Brano : IContenutoRiproducibile
     {
-        public override int Anno()
+        private string titolo;
+        private string artista;
+        private string album;
+        private string genere;
+        private string durata;
+        private string anno;
+        private string descrizione;
+        public Brano(string Titolo, string NomeArtista, string Album, string Genere, string Durata, string Anno, string Descrizione)
         {
-            throw new NotImplementedException();
+            this.titolo = Titolo;
+            this.artista = NomeArtista;
+            this.album = Album;
+            this.genere = Genere;
+            this.durata = Durata;
+            this.anno = Anno;
+            this.descrizione = Descrizione;
         }
 
-        public override string Artista()
+        public string GetTitolo()
         {
-            throw new NotImplementedException();
+            return this.titolo;
         }
 
-        public override string Descrizione()
+        public string GetArtista()
         {
-            throw new NotImplementedException();
+            return this.artista;
         }
 
-        public override string Durata()
+        public string GetAlbum()
         {
-            throw new NotImplementedException();
+            return this.album;
         }
 
-        public override string Titolo()
+        public string GetGenere()
         {
-            throw new NotImplementedException();
+            return this.genere;
+        }
+
+        public string GetDurata()
+        {
+            return this.durata;
+        }
+
+        public string GetAnno()
+        {
+            return this.anno;
+        }
+
+        public string GetDescrizione()
+        {
+            return this.descrizione;
+        }
+
+        public void Pausa()
+        {
+            Console.WriteLine("Il podcast " + this.titolo + " è stato messo in pausa");
+        }
+
+        public void Play()
+        {
+            Console.WriteLine("Il podcast " + this.titolo + " è stato messo riproduzione");
+        }
+
+        public void Stop()
+        {
+            Console.WriteLine("Il podcast " + this.titolo + " è stato stoppato e riavvolto");
+        }
+
+        public override string ToString()
+        {
+            return this.GetTitolo() + "\t\t\t\t\t" + this.GetArtista();
         }
     }
 }
